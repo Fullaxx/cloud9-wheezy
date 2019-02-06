@@ -19,6 +19,7 @@ RUN mkdir /root/.c9
 RUN curl https://nodejs.org/dist/latest-v0.10.x/node-v0.10.48-linux-x64.tar.xz -o /root/.c9/node.tar.xz
 RUN tar xf /root/.c9/node.tar.xz -C /root/.c9/
 RUN mv /root/.c9/node-* /root/.c9/node
+RUN rm /root/.c9/node.tar.xz
 
 # ------------------------------------------------------------------------------
 # Install Cloud9
